@@ -1,0 +1,124 @@
+body {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+h1,h3,img {
+    text-align: center;
+    display: block;
+    margin: 15px auto;
+}
+/* Gave form 80% width */
+.form {
+    width: 80%;
+    text-align: left;
+    margin:auto;
+}
+div {
+    padding : 5px;
+    position : relative;
+}
+/* .form2 {
+    display: flex;
+    flex-direction: column;
+} */
+.course {
+    display: flex;
+    justify-content: space-between;
+}
+input[type = text] {
+    border: none;
+    border-bottom: 1px solid grey;
+    margin : 5px;
+    width : 100%;
+    height : 30px;
+    
+}
+input[type = text]:hover {
+    border-bottom : 2px solid black;
+}
+input[type = text]:active,input[type = text]:focus {
+    outline : none;
+    border-bottom : 2px solid purple;
+}
+label {
+    display: inline-block;
+    width : 100%;
+    margin : 5px;
+}
+input[type = radio] {
+    color : purple;
+}
+select {
+    border : none;
+    border-bottom : 1px solid grey;
+    outline : none;
+    width : 100%;
+    height: 30px;
+    
+}
+select:active {
+    outline : none;
+}
+p {
+    color : gray;
+}
+input+p{
+    font-size : 10px;
+    position:relative;
+    bottom: 13px;
+    left : 10px;
+}
+table {
+    border-radius : 10px;
+    width : 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 6px 20px 0 rgba(0, 0, 0, 0.019);
+    cursor : grab;
+}
+th, td, tr {
+    padding : 15px;
+}
+footer {
+    text-align : center;
+    margin : none;
+    margin-top : 50px;
+    background-color: teal;
+    padding : 50px;
+    
+}
+footer>p {
+    
+    color : white;
+
+}
+.dob {
+    display : flex;
+    margin : 0;
+    padding : 0;
+    position: relative;
+    
+
+}
+.dob input {
+    
+}
+label[for=dob]{
+    width : 100%;
+    display : flex;
+    justify-content: space-between;
+}
+label[for=dob]>div {
+    width: 100%;
+}
+label[for=dob] input{
+    width : 4%;
+
+}
+#year {
+    width : 8%;
+}
+#age {
+    width : 100%;
+}

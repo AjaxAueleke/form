@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sayalani Forms</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <img src="images/saylani-logo.png" alt="Saylani Logo" />
+        <h1>Saylani Mass Training & Job Creation Program</h1>
+        <h3>Registration / Entry Test Form</h3>
+        <div class="form">
+            <div class="form2">
+                <div class="course">
+                    <label for="course">
+                        <p>Select Your Course*</p>
+                        <select name="course" id="course-selection">
+                            <option value="Select-Course">Select Course</option>
+                            <option value="it-essentials">IT Essential Fsd</option>
+                        </select>
+                    </label>
+                    <label for="batch">
+                        <p>Select Batch*</p>
+                        <select name="batch" id="batch">
+                            <option value="batch6">6</option>
+                        </select>
+                    </label>
+                </div>
+                <label for="name">
+                    <input type="text" name="name" id="name" maxlength="18" placeholder="Your Name *" />
+                    <p>Max characters allowed: 18</p>
+                </label>
+
+                <div class="dob">
+                    <label for="dob">
+                        <div>
+                            <p>Date of Birth*</p>
+                            
+                            <div class="dob">
+                            <input type="text" name="dob" id="dobd" size="1" placeholder="dd" /><input type="text"
+                                name="dob" id="dobd" size="1" placeholder="mm" /><input type="text" name="dob" id="year"
+                                size="4" placeholder="yyyy" />
+                            </div>
+                        </div>
+                        <div>
+                            <p>Age*</p>
+                            <input type="text" name="Age" id="age" placeholder="Age" />
+                        </div>
+                    </label>
+                </div>
+                <div>
+                    <label for="Gender">
+                        Gender*
+                        <input type="radio" name="gender" id="male" value="male" />Male
+                        <input type="radio" name="gender" id="female" value="female" />Female
+                    </label>
+                </div>
+                <div>
+                    <input type="text" name="cnic" id="cnic" placeholder="CNIC / B-Form*" />
+                    <p>e.g 4220123456789</p>
+                </div>
+                <div>
+                    <input type="text" name="fname" id="fname" placeholder="Father's Name*" />
+                </div>
+                <div>
+                    <input type="text" name="fcnic" id="fcnic" placeholder="Father's / Guardian's CNIC" />
+                    <p>e.g 4220123456789</p>
+                </div>
+                <div>
+                    <input type="text" name="address" id="address" placeholder="Full and Permanent Address" />
+                </div>
+                <div>
+                    <input type="text" name="number" id="number" placeholder="Cell Number" />
+                    <p>03301234567</p>
+                </div>
+                <div>
+                    <input type="text" name="email" id="email" placeholder="Email" />
+                    <p>
+                        Prove a valid, accessible email that we will use to contact you.
+                    </p>
+                </div>
+                <div>
+                    <label for="qual">
+                        <input type="radio" name="qual" id="none" /> None
+                        <input type="radio" name="qual" id="Matric" /> matric
+                        <input type="radio" name="qual" id="none" /> Intermediate
+                        <input type="radio" name="qual" id="matric" /> Bachelor
+                        <input type="radio" name="qual" id="none" /> Master
+                        <input type="radio" name="qual" id="matric" /> PhD
+                    </label>
+                </div>
+                <div>
+                    <p>
+                        Upload your recent image (face front, without glasses and with a
+                        single-colored background)*
+                    </p>
+                    <input type="file" name="file" id="file" />
+                    <p>Only png or jpg with size &lt 1MB is allowed</p>
+                </div>
+            </div>
+            <div>
+                Availibilty*
+                <p>
+                    Drag and drop class timings mentioned below as per your availiblity
+                    and priority.
+                </p>
+                <div>
+                    <table>
+                        <tr>
+                            <td rowspan="2">Priority # 1</td>
+                            <td>Mon, Tues & wed</td>
+                        </tr>
+                        <tr>
+                            <td>3pm to 5pm</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <p>Declaration Undertaking</p>
+                    <ol>
+                        <li>
+                            I hereby, solemnly declare that the data and facts mentioned
+                            herein are true and correct to the best of my knowledge.
+                            Further, I will abide by my all the establish and future
+                            regulation and policies of SWIT
+                        </li>
+                        <li>
+                            I hereby accept the responsibilites of the good conduct and
+                            guarantee that I will not be involved in any other activity,
+                            polical or ethic, but learning during my stay in the program.
+                        </li>
+                        <li>
+                            Defiance will render my admission cancelled at any point in
+                            time.
+                        </li>
+                        <li>
+                            Upon completion of course, I will complete the required project
+                            by SWIT.
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <input type="checkbox" name="tnc" id="tnc" /> I agree with the above
+                    terms.
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Use Chrome or Firefox for best experience</p>
+        <p>Created by Muhammad Ahmed</p>
+    </footer>
+</body>
+
+</html>
